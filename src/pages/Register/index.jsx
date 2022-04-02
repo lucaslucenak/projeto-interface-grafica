@@ -63,7 +63,7 @@ const RegisterPage = () => {
       {({ handleChange, handleBlur, handleSubmit, isSubmitting }) => (
         <div class="container" id="cardRegister">
           <form onSubmit={handleSubmit}>
-            <div class="form-group">
+            <div class="form-group marginRegister">
               <label>Username</label>
               <Field
                 placeholder="Be creative!"
