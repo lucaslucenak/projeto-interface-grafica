@@ -15,7 +15,10 @@ const RegisterProject = () => {
     setStatus({ isValidating: true });
     axios
       .post("https://immense-sands-97611.herokuapp.com/api/v1/projects", values)
-      .then((resp) => console.log(resp.data));
+      .then((resp) => console.log(resp.data))
+      .catch(error => {
+        alert(error)
+      });
   };
 
   return (
